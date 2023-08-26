@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tu peso en marte o jupiter</title>
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en marte o jupiter</p>
+    <script> //lenguaje javascript etiqueta
+     var usuario = prompt("¿Cual es tu peso?") //prompt funciona como alert, pero deja poner info.
+     var peso = parseInt(usuario); //Sirve para convertir texto en numero
+     var g_tierra = 9.8;
+     var g_marte = 3.7;
+     var g_jupiter = 24.;
+     var peso_final;
+     peso_final = peso * g_marte / g_tierra; //ecuason matematica
+     peso_final = parseInt(peso_final); // parseInt: elimina los decimales
+     document.write("Tu perso en marte es <strong>" + peso_final + " kilos</strong>"); //document.write: sirve para introducir scrip
+    </script>
+  </body>
+</html>
